@@ -1,0 +1,56 @@
+[
+ {
+  "url": "https://www.linkedin.com/pulse/you-have-30-seconds-earn-your-readers-attention-alborz-geramifard-2ohrc",
+  "slug": "you-have-30-seconds-earn-your-readers-attention-alborz-geramifard-2ohrc",
+  "title": "You Have 30 Seconds to Earn Your Reader’s Attention - Experimental Results",
+  "desc": "AI makes documents easy to produce. Making them easy to understand still takes work.",
+  "read": "3 min read",
+  "date": "2026-09-25",
+  "cover": "assets/img/notes/you-have-30-seconds-earn-your-readers-attention-alborz-geramifard-2ohrc.jpg"
+ },
+ {
+  "url": "https://www.linkedin.com/pulse/struggle-didnt-disappear-moved-alborz-geramifard-jukdc",
+  "slug": "struggle-didnt-disappear-moved-alborz-geramifard-jukdc",
+  "title": "The Struggle Didn't Disappear. It Moved.",
+  "desc": "One of the biggest concerns I hear today is that AI is making entry-level software engineering obsolete. If AI writes the code, how will junior engineers ever learn? It's a reasonable concern, but I think it's based on the wrong mental model.",
+  "read": "3 min read",
+  "date": "2026-08-01",
+  "cover": "assets/img/notes/struggle-didnt-disappear-moved-alborz-geramifard-jukdc.jpg"
+ },
+ {
+  "url": "https://www.linkedin.com/pulse/take-dip-alborz-geramifard-otlec",
+  "slug": "take-dip-alborz-geramifard-otlec",
+  "title": "Take the Dip!",
+  "desc": "Building AI agents has become easier than ever. Building agents reliable enough to ship is still incredibly hard.",
+  "read": "5 min read",
+  "date": "2026-04-30",
+  "cover": "assets/img/notes/take-dip-alborz-geramifard-otlec.jpg"
+ },
+ {
+  "url": "https://www.linkedin.com/pulse/neurips-2025-takeaways-agentic-ai-alborz-geramifard-zgkbc",
+  "slug": "neurips-2025-takeaways-agentic-ai-alborz-geramifard-zgkbc",
+  "title": "NeurIPS 2025 Takeaways on Agentic AI",
+  "desc": "The venue made it clear that the field is entering a more demanding phase for agentic AI. Progress is no longer gated by isolated model improvements, but by how well learning, exploration, inference, and evaluation work together under interaction, uncertainty, and distribution shift.",
+  "read": "9 min read",
+  "date": "2026-01-15",
+  "cover": "assets/img/notes/neurips-2025-takeaways-agentic-ai-alborz-geramifard-zgkbc.jpg"
+ },
+ {
+  "url": "https://www.linkedin.com/pulse/agentic-ai-summit-berkeley-takeaways-alborz-geramifard-paarc",
+  "slug": "agentic-ai-summit-berkeley-takeaways-alborz-geramifard-paarc",
+  "title": "Agentic AI Summit @ Berkeley Takeaways ",
+  "desc": "Just wrapped up an energizing event hosted by Berkeley’s RDI, bringing together top minds from academia and industry leaders at OpenAI, Google, Meta, Salesforce, LinkedIn, and others. The sessions dove deep into both the toughest challenges and the most promising directions for Agentic AI.",
+  "read": "4 min read",
+  "date": "2025-08-05",
+  "cover": "assets/img/notes/agentic-ai-summit-berkeley-takeaways-alborz-geramifard-paarc.jpg"
+ },
+ {
+  "url": "https://www.linkedin.com/pulse/icml-2025-takeaways-agentic-lens-alborz-geramifard-rcerc",
+  "slug": "icml-2025-takeaways-agentic-lens-alborz-geramifard-rcerc",
+  "title": "ICML 2025 Takeaways with an Agentic Lens",
+  "desc": "I had the privilege of being part of this vibrant community at ICML 2025. The energy around structured reasoning, agent interfaces, and scalable alignment was unmistakable.",
+  "read": "7 min read",
+  "date": "2025-07-23",
+  "cover": "assets/img/notes/icml-2025-takeaways-agentic-lens-alborz-geramifard-rcerc.jpg"
+ }
+]
