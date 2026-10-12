@@ -378,13 +378,3 @@ h2 { font-size: 2rem; }
 @media (max-width: 760px) { :root { --year-size: 1.2rem; } }
 
 footer .wrap > span:first-child { font-family: var(--serif); font-variation-settings: "opsz" 48, "SOFT" 30; font-size: .95rem; color: var(--text); }
-
-/* ---------- Highlight thumbnails: one tinted treatment, full color on hover ---------- */
-.hl-card img {
-  background: var(--accent-soft); border-color: transparent;
-  filter: grayscale(1) sepia(.9) hue-rotate(135deg) saturate(.7) brightness(1.04) contrast(1.04);
-  transition: filter .35s ease, transform .35s ease;
-}
-.hl-card:hover img { filter: none; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .hl-card img { opacity: .9; } }
-:root[data-theme="dark"] .hl-card img { opacity: .9; }
