@@ -378,3 +378,8 @@ h2 { font-size: 2rem; }
 @media (max-width: 760px) { :root { --year-size: 1.2rem; } }
 
 footer .wrap > span:first-child { font-family: var(--serif); font-variation-settings: "opsz" 48, "SOFT" 30; font-size: .95rem; color: var(--text); }
+
+/* ---------- Notes: keep the date clear of the card when it lifts on hover ---------- */
+.post time { margin-bottom: 14px; }
+.post .note-card { margin-top: 2px; }
+.note-card:hover { transform: translateY(-2px); }
