@@ -222,7 +222,7 @@ a.pill[href*="youtube"], a.pill[href*="techtalks"] { background: var(--coral-sof
 /* ---------- Footer ---------- */
 footer { margin-top: 24px; border-top: 1px solid var(--line); padding: 28px 0 44px; color: var(--muted); font-size: .88rem; position: relative; }
 footer::before { content: ""; position: absolute; top: -1px; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--accent), var(--accent-2), #f4a261); }
-footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+footer .wrap { display: flex; justify-content: center; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1100px) { .hero::before { left: 54%; } }
