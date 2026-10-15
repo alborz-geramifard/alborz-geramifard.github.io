@@ -48,7 +48,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=35">
+  <link rel="stylesheet" href="assets/style.css?v=36">
 </head>
 <body>
 
@@ -204,13 +204,14 @@
           <li>AAAI Workshop: Synergy of RL and LLMs <span class="yr">2024</span></li>
           <li>ICML Workshop: RL for Real Life <span class="yr">2019 – 2022</span></li>
           <li>NeurIPS Workshop: Human in the Loop Dialogue Systems <span class="yr">2020</span></li>
-          <li>ACL Workshop: Safety for Conversational AI <span class="yr">2020</span></li>
-          <li>West Coast NLP Summit (WeCNLP) <span class="yr">2019 – 2020</span></li>
-          <li>NeurIPS Workshop: Conversational AI <span class="yr">2017 – 2019</span></li>
-          <li>NeurIPS Workshop: Advances in ML for Sensorimotor Control <span class="yr">2013</span></li>
-          <li>NeurIPS Workshop: Bayesian Nonparametric Models for Reliable Planning and Decision-Making Under Uncertainty <span class="yr">2013</span></li>
-          <li>CDC Workshop: Intelligent Planning and Control <span class="yr">2012</span></li>
+          <li class="more">ACL Workshop: Safety for Conversational AI <span class="yr">2020</span></li>
+          <li class="more">West Coast NLP Summit (WeCNLP) <span class="yr">2019 – 2020</span></li>
+          <li class="more">NeurIPS Workshop: Conversational AI <span class="yr">2017 – 2019</span></li>
+          <li class="more">NeurIPS Workshop: Advances in ML for Sensorimotor Control <span class="yr">2013</span></li>
+          <li class="more">NeurIPS Workshop: Bayesian Nonparametric Models for Reliable Planning and Decision-Making Under Uncertainty <span class="yr">2013</span></li>
+          <li class="more">CDC Workshop: Intelligent Planning and Control <span class="yr">2012</span></li>
         </ul>
+        <button class="show-more" type="button" data-more="Show 6 earlier" data-less="Show fewer">Show 6 earlier</button>
       </div>
       <div>
         <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></span>Area Chair</h3>
@@ -240,6 +241,11 @@
     <span>© <span id="y"></span> Alborz Geramifard</span>
   </div>
 </footer>
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+document.querySelectorAll('.show-more').forEach(b => b.addEventListener('click', () => {
+  const box = b.parentElement, open = box.classList.toggle('open'); b.textContent = open ? b.dataset.less : b.dataset.more;
+}));
+</script>
 </body>
 </html>

@@ -384,3 +384,9 @@ footer .wrap > span:first-child { font-family: var(--serif); font-variation-sett
 .post time { margin-bottom: 14px; }
 .post .note-card { margin-top: 2px; }
 .note-card:hover { transform: translateY(-2px); }
+
+/* ---------- Collapsible lists ---------- */
+.service li.more { display: none; }
+.service .open li.more { display: flex; }
+.show-more { margin-top: 10px; font: inherit; font-size: .84rem; font-weight: 600; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; }
+.show-more:hover { text-decoration: underline; }
