@@ -390,3 +390,6 @@ footer .wrap > span:first-child { font-family: var(--serif); font-variation-sett
 .service .open li.more { display: flex; }
 .show-more { margin-top: 10px; font: inherit; font-size: .84rem; font-weight: 600; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; }
 .show-more:hover { text-decoration: underline; }
+
+.hl-card h3 a { color: var(--text); }
+.hl-card h3 a:hover { color: var(--accent); text-decoration: none; }
