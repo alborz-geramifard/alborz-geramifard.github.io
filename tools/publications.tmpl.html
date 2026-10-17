@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=36">
+  <link rel="stylesheet" href="assets/style.css?v=55">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1V1ZB8K1T"></script>
   <script>
@@ -46,15 +46,18 @@
   </div>
 </nav>
 
-<div class="wrap page-head">
+<div class="wrap page-head page-head--art">
   <div class="eyebrow">Research</div>
   <h1>Publications</h1>
   <p class="muted">Also on <a href="https://scholar.google.com/citations?user=5tT42pwAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+  <div class="page-art"><img src="assets/img/banner.png" alt="" loading="eager"></div>
+</div>
+<div class="wrap pub-tools">
   <div class="toolbar">
     <input id="q" type="search" placeholder="Search title, author, or venue…" aria-label="Search publications">
     <span class="count"><span id="n"><!--COUNT--></span> of <!--COUNT--></span>
   </div>
-  <div class="toolbar">
+  <div class="toolbar toolbar--filters">
     <div class="filters" id="filters">
       <button class="on" data-kind="all">All</button>
       <button data-kind="conference">Conference</button>
@@ -77,14 +80,13 @@
 </footer>
 <script>
 document.getElementById('y').textContent = new Date().getFullYear();
-const q = document.getElementById('q'), n = document.getElementById('n'), filters = document.getElementById('filters');
+const q = document.getElementById('q'), filters = document.getElementById('filters');
 const pubs = [...document.querySelectorAll('.pub')].map(el => ({el, txt: el.textContent.toLowerCase(), kind: el.dataset.kind}));
 let kind = 'all';
 function apply() {
   const s = q.value.trim().toLowerCase(); let shown = 0;
   pubs.forEach(p => { const hit = (!s || p.txt.includes(s)) && (kind === 'all' || p.kind === kind); p.el.classList.toggle('hidden', !hit); if (hit) shown++; });
   document.querySelectorAll('.year').forEach(y => y.classList.toggle('hidden', !y.querySelector('.pub:not(.hidden)')));
-  n.textContent = shown;
 }
 q.addEventListener('input', apply);
 filters.addEventListener('click', ev => {
