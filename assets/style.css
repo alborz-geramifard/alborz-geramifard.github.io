@@ -282,7 +282,8 @@ footer .wrap { display: flex; justify-content: center; }
   background: var(--bg-elev); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 }
 a.hl-card:hover { transform: translateX(4px); box-shadow: var(--shadow); border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); text-decoration: none; }
-.hl-card img { width: 112px; height: 72px; object-fit: contain; border-radius: 8px; background: #fff; padding: 4px; border: 1px solid var(--line); }
+.hl-card img { width: 112px; height: 72px; object-fit: contain; border-radius: 8px; }
+.hl-card img.photo { object-fit: cover; }
 .hl-card .meta { font-size: .74rem; color: var(--accent-2); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
 .hl-card h3 { font-size: 1.08rem; line-height: 1.35; }
 .hl-card p { margin: 6px 0 0; color: var(--muted); font-size: .92rem; }
